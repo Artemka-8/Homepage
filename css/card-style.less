@@ -1,0 +1,108 @@
+// main: style.less
+
+.card-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "header card1"
+    "card2 card1"
+    "card2 card3"
+    "card2 card3";
+    max-width: 940px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @primary-color;
+    letter-spacing: 0.05em;
+}
+
+.card__img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+#exception-picture{
+    margin-top: -16px;
+}
+
+
+.card-container h2{
+    margin-left: 10%;
+    grid-area: header;
+    max-width: 358px;
+    font-size: @second-order-headers;
+    line-height: 46px;
+    color: #316099;
+}
+
+.card{
+    max-width: 380px;
+    max-height: 725px;
+    background-color: @font-white;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+
+}
+
+.card__design{
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.card__title{
+    max-width: 280px;
+}
+
+.card__link{
+    text-decoration: none ;
+    color: @font-blue;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+
+}
+
+.card__description{
+    max-width: 284px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+    margin-bottom: 32px;
+}
+
+.card__button{
+    font-size: 14px;
+    line-height: 30px;
+    color: @secondary-color;
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+    margin-bottom: 48px;
+}
+
+.card__button:hover{
+  text-shadow: 1px 1px 2px rgba(67, 136, 182);
+}
+
+.card_1{
+    grid-area: card1;
+}
+
+.card_2{
+    grid-area: card2;
+}
+
+.card_3{
+    grid-area: card3;
+}
